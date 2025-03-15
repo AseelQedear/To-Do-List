@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="todo-app">
+      <div class="left-section">
+        <h1>♡ My To-Do List ♡</h1>
+        <div class="new-task">
+          <input id="task-input" type="text" placeholder="Enter a new task" />
+          <select id="task-priority">
+            <option value="high">🔴 High</option>
+            <option value="medium" selected>🟡 Medium</option>
+            <option value="low">🟢 Low</option>
+          </select>
+          <button id="add-task-btn">Add Task</button>
+        </div>
+
+        <h2 id="notes-header">♡ Notes ♡</h2>
+        <div class="notes-section">
+          <img
+            src="media/note.png"
+            id="note-image"
+            style="pointer-events: none"
+          />
+          <textarea id="note-input" placeholder="Write a note..."></textarea>
+          <button id="add-note-btn">Add Note</button>
+        </div>
+        <div id="notes-display"></div>
+      </div>
+
+      <div class="right-section">
+        <h2 id="show-all">All Tasks</h2>
+        <ul id="task-list-all"></ul>
+
+        <h2 id="show-pending">Pending Tasks</h2>
+        <ul id="task-list-pending"></ul>
+
+        <h2 id="show-completed">Completed Tasks</h2>
+        <ul id="task-list-completed"></ul>
+      </div>
+    </div>
+
+    <script src="app2.js"></script>
+  </body>
+</html>
